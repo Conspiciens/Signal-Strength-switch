@@ -5,7 +5,6 @@
 #include <sys/un.h> 
 #include <unistd.h> 
 
-#define CONTROL_INTERFACE = "/var/run/wpa_supplicant"
 
 int get_wifi_strength(const char *iface) {
     
@@ -14,6 +13,7 @@ int get_wifi_strength(const char *iface) {
 
 int main() {
     const char *wifi_iface = "wlan0"; 
+    const char *cellular_iface = "eth0"; 
 
 
 } 
